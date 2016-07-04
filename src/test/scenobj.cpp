@@ -140,6 +140,7 @@ int SceneObject::findOrCreateVao(const char* objx)
 	{
 		m_pipeline.attachVBO(vao, 1, new PuresoftVBO(16, mi.num_vertices));
 		m_pipeline.attachVBO(vao, 2, new PuresoftVBO(16, mi.num_vertices));
+
 		m_pipeline.attachVBO(vao, 4, new PuresoftVBO(8, mi.num_vertices));
 
 		m_pipeline.getVBO(vao, 1)->updateContent(mi.tangents);
